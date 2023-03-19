@@ -1,17 +1,14 @@
 .sec4-parent{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 223px;
 }
 .item{
     height: 157px;
-    /* width: 223px; */
+    width: 223px;
 }
-.item{
-    position: relative;
-    color: white;
-}
-.item .above{
-    position: absolute;
-    z-index: 100;
+.item-one{
+    background-image: url("./../media/photo.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
 }
