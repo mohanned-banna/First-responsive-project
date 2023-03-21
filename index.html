@@ -9,22 +9,77 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mahmoudStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
 <body>
     <div class="container">
-        <div class="mahmoud">
+         <div class="mahmoud"  >
+
+            <div class="nav" style=" padding: 15px 0 22px 0;">
+
+                  <div class="logo"  style="display: flex; align-items: center; gap: 15px;">
+                  <i class="fa-solid fa-envelope "></i>
+                  <h1>NinjaMail</h1>
+                  </div>   
 
 
-            
+                  <div class="btn"  onclick="showing()">
+                         <i class="fa-solid fa-bars-staggered"></i>
+                  </div>
+
+
+
+        </div>
+    
+        <div class="menu disapper"  >
+          <ul>
+
+            <li><a href="default.asp" >Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+          </ul>
+         
+        
+      </div>
+      <!-- .................................nav bar ....................... -->
+    
+ <div  class="login" >
+
+
+   <div class="title" style="width: 100%; height: 100%;">
+    <h2> Create Stunning Email Campaigns </h2>
+
+   </div>
+   <div class="photo_title" >
+    <img src="media/photo-1544717302-de2939b7ef71 (image).png" width="100%" height="100%">
+
+   </div>
+   <div class="span1">
+    <span> Create and launch email campaigns that captivate your customers in just a few clicks.</span>
+   </div>
+
+
+
+
+ </div>
+
+ <div class="bttn" >
+  <button class="try-btn"> TRY NOW </button>
+  <button class="Get-btn"> GET A DEMO </button>
+
+
+ </div>
 
 
 
 
 
-
-
-
+<div class="reach">
+  <img src="media/VIDEO (image).png" width="100%" height="100%">
+  <p>Reach More Customers</p>
+  <button> LEARN HOW</button>
+</div>
 
 
 
@@ -51,7 +106,6 @@
 
 
         </div>
-
 
 
 
@@ -109,9 +163,48 @@
              
         </div>
         <div class="mohanned">
-            <h1>mohanned</h1>
         </div>
-    </div>
+    </div> 
     
 </body>
+
+<script>
+
+  // const toggleBtn = document.querySelector('.btn')
+  // const toggleBtnIcon = document.querySelector('.btn i')
+  // const dropDownMenu = document.querySelector('.menu')
+
+
+  // toggleBtn.onclick= function () {
+  // dropDownMenu.classList.toggle('open')
+  // const isOpen = dropDownMenu.classList.contains('open')
+  // toggleBtnIcon.classList = isOpen
+  //   ? 'fa-solid fa-xmark'
+  //   :'fa-solid fa-bars'
+  // }
+ 
+
+
+
+
+let isChecked = false
+let menu = document.querySelector(".menu")
+
+function showing(){
+if(!isChecked) {
+  menu.classList.remove("disapper")
+menu.classList.add("show")
+isChecked=true
+
+}
+
+else
+{
+menu.classList.remove("show")
+menu.classList.add("disapper")
+isChecked = false
+}
+}
+  </script>
+
 </html>
